@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: eureka-service
+  profiles:
+    active: dev
+  cloud:
+    config:
+      uri: http://localhost:8071
+      fail-fast: true
+    loadbalancer:
+      ribbon:
+        enable: false
